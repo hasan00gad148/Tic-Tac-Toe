@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="../styles/style1.css">
+    <script src="../scripts/script1.js" defer></script>
+    <link rel="shortcut icon" href="strawHatsWeb\html\244046064_7046581822022429_965439763248711907_n.jpg" type="image/x-icon">
+
+</head>
+<body>
+
+    
+    <header>
+        <h1>Tic Tac Toe</h1>
+        <p> This was made with HTML CSS JavaScript</p>
+    </header>
+
+
+
+    <!-- choose name -->
+    <aside>
+        <div>
+
+        <form action="#" >
+            <label for="pName"> choose player1 name</label>
+            <input type="text" id="pName" name="pName">
+            
+            <a href="#" class="play-btn" > confirm</a>
+        </form>
+    </div>
+    </aside>
+
+
+    <main>
+        <!-- players info  & start play -->
+        <section class="players-info">
+            <ul>
+                <li>
+                    <div>
+                        <img src=".\guitar.png" alt="guitar">
+                        <h1 class="p1Name">Player1</h1>
+                        <h1>X</h1>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src=".\listening.png" alt="listening">
+                        <h1 class="p2Name">Player2</h1>
+                        <h1>O</h1>
+                    </div>
+                </li>
+            </ul>
+
+            <a href="#" class="play-btn">play</a>
+
+        </section>
+
+
+
+
+
+        <!-- whose the winner -->
+        <section class="whose-winner">
+
+            <div>
+                <h1> <span>Player1</span> is the winner</h1>
+            </div>
+            <a href=""  class="play-btn">play new game</a>
+        </section>
+
+
+
+
+        <!--  whose turn -->
+        <section class="whose-turn">
+            <div>
+                <p>It's  <span>player1</span> turn</p>
+            </div>
+        </section>
+
+
+
+        <!-- XO -->
+        <section class="xo">
+            <div>
+                <ul>
+                    <li data-index="0">X</li>
+                    <li data-index="1">O</li>
+                    <li data-index="2">X</li>
+                    <li data-index="3">O</li>
+                    <li data-index="4">X</li>
+                    <li data-index="5">O</li>
+                    <li data-index="6">X</li>
+                    <li data-index="7">O</li>
+                    <li data-index="8">X</li>
+                </ul>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+
+</body>
+</html>

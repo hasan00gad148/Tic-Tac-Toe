@@ -1,0 +1,228 @@
+
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(172, 177, 231);
+    text-align: center;
+}
+
+header {
+box-sizing: border-box;
+background-color: rgb(62, 54, 134);
+color: rgb(240, 235, 235);
+width : 100%;
+text-align: center;
+padding: 1rem;
+margin: 0%;
+}
+
+
+section {
+margin: 1.5rem auto;
+}
+
+
+/* start Aside ----------------------------------------------------------------*/
+aside {
+
+    display: none;
+
+
+    position:fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    width : 100%;
+    height: 100%;
+}
+
+
+aside div{
+ 
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+} 
+
+aside form{
+
+    position:absolute;
+    top: 50%;
+    left: 30%;
+    z-index: 3;
+    width : 40%;
+
+    background-color: rgb(141, 146, 209);
+    color: rgb(14, 12, 32);
+
+    border: 0.1rem solid black ;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: auto;
+
+    
+    box-sizing: border-box;
+    padding: 1.5rem;
+}
+
+aside label {
+    display: inline-block ;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+aside input {
+    display: block;
+    background-color: rgb(191, 195, 238);
+    width: 50%;
+    border-radius: 1rem;
+    color: rgb(14, 12, 32);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 2rem auto;
+} 
+/* end Aside -------------------------------------------------------------------------------------------*/
+
+
+
+
+.players-info {
+width : 50%;
+
+
+box-sizing: border-box;
+padding: 1rem;
+
+}
+
+.players-info ul {
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none !important;
+    padding: 0;
+    margin: 2rem auto ;
+}
+
+.players-info li {
+    flex: 1;
+    box-sizing: border-box;
+    background-color: rgb(141, 146, 209);
+    color: rgb(14, 12, 32);
+    padding: 0.5rem;
+    box-shadow: 0.1rem 0.1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+
+.players-info img {
+    border-radius: 0.5rem;
+    width: 50%;
+
+}
+
+.play-btn, .play-btn:visited, .play-btn:hover, .play-btn:active{
+    background-color: rgb(62, 54, 134);
+    color: rgb(240, 235, 235);
+    margin: 1.5rem auto;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* start winner & turn -----------------------------------------------------------*/
+
+.whose-winner{
+    display: none;
+
+
+
+    width : 50%;
+    background-color: rgb(141, 146, 209);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    overflow: hidden;
+    text-align: center;
+    margin: 2rem auto ;
+}
+
+
+
+
+
+.whose-turn{
+    visibility: hidden;
+
+    width : 25%;
+    background-color: rgb(62, 54, 134);
+    color: rgb(240, 235, 235);
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* end winner & turn -----------------------------------------------------------*/
+
+
+
+
+/* start xo ----------------------------------------------------------- */
+
+.xo{
+    visibility: hidden;
+
+    background-color: rgb(157, 163, 235);
+    width: 40%;
+    box-sizing: border-box;
+    margin:  1.5rem auto;
+    border-radius: 0.5rem;
+    border: 0.01rem solid  rgb(62, 54, 134);
+
+}
+
+
+.xo ul{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    list-style: none !important;
+   
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
+.xo li{
+
+    background-color: rgb(111, 103, 185);
+    color: rgb(240, 235, 235);
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    box-sizing: border-box;
+
+    border-radius: 0.2rem;
+}
+
+.xo li:hover, .xo-clicked{
+    background-color: rgb(62, 54, 134) !important;
+    box-shadow: 0.1rem 0.1rem black;
+}
